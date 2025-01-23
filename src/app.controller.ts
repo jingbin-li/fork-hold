@@ -8,6 +8,12 @@ export class AppController {
   @Get()
   @Render('index')
   root() {
-    return { message: '你好呀' };
+    return { message: 'Hello from NestJS with HTMX!' };
+  }
+
+  @Get('/another')
+  @Render('partial')
+  another() {
+    return { message: 'This message was fetched via HTMX!' };
   }
 }

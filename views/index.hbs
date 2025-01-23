@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>App</title>
-  </head>
-  <body>
-    {{ message }}
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX & NestJS SSR</title>
+    <script src="https://unpkg.com/htmx.org@1.9.3">
+    </script>
+</head>
+<body>
+    <h1>{{message}}</h1>
+    <button hx-get="/another" hx-target="#result">Fetch Another Message</button>
+    <div id="result"></div>
+</body>
 </html>
