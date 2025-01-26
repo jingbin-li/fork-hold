@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button"
+import Navbar from "@/components/common/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Button>Click me</Button>
+      <h1>Home</h1>
+      <Navbar activeValue={'home'}></Navbar>
     </div>
-  )
+  );
 }
